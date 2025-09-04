@@ -1,0 +1,418 @@
+  /* ACCUEIL*/
+html {
+  scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps du site */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation */
+header {
+  background: #0d0d0d;
+  padding: 15px 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo .prenom {
+  color: #00d1c7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00d1c7;
+}
+
+.section-intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+
+    
+    
+}
+.btn{
+    background-color: #00d1c1;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+     background-color: #f4f4f4;
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    
+    
+}
+h2{
+  text-align: center;
+}
+
+
+
+ /* ABOUT*/
+
+
+
+.about-modern {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+   background: #f7f7f7;
+}
+
+.about-card {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.about-img {
+  flex: 1 1 300px;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid  #00d1c1;
+}
+
+.about-text {
+  flex: 2 1 400px;
+  padding: 2rem;
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color:  #00d1c1;
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.detail-block h3 {
+  margin-bottom: 0.5rem;
+  color:  #00d1c1;
+}
+
+.detail-block ul {
+  list-style-type: none;
+}
+
+.detail-block ul li {
+  background: #f8f9fa;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    padding: 1rem;
+  }
+}
+                      
+/* Section Projets */
+.projects {
+  padding: 50px 20px;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card span {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #555;
+}
+
+.card button {
+  background: #00cfcf;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card button:hover {
+  background: #00a5a5;
+}
+
+/* Section Compétences */
+.skills {
+  background: #f7f7f7;
+  padding: 50px 20px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.skill-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.skill-box h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.skill {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.skill p {
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+
+.bar {
+  background: #ddd;
+  border-radius: 10px;
+  height: 8px;
+  width: 100%;
+}
+
+.progress {
+  background: #00cfcf;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+     
+.contact-section {
+  background: #0d0d0d;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #00d1c7; 
+  font-weight: bold;
+}
+
+
+.contact-form {
+  max-width: 700px;
+  margin: auto;
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.form-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-box, .input-full {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #ddd;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  background: #fff;
+  color: #000;
+}
+
+textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+
+.btn-submit {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #00d1c7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #00b3aa;
+}
+.input-full {
+  margin-bottom: 20px; 
+}
+
+#modal {
+  display: none; 
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9); 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+#closeModal {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+#modal img {
+  width: 80%;
+  max-width: 500px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+
+#modal div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

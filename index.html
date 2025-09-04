@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="nom">N'GATTA</span> <span class="prenom">Muriel</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#accueil" class="active">Accueil</a></li>
+        <li><a href="#propos">À propos</a></li>
+        <li><a href="#projet">Projets</a></li>
+        <li><a href="#competence">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="section-intro" id="accueil">
+      <div>
+        <h2 class="typewriter">Bienvenue sur mon portfolio</h2>
+        <p class="typewriter">Développement, bases de données et design : bienvenue dans mon univers digital. </p>
+        <p class="typewriter">Je conçois et développe des projets qui allient technologie et innovation.</p>
+        <a href="./DOC/CV_MURIEL_N'GATTA (2).pdf" target="_blank" class="btn">Télécharger mon CV</a>
+      </div>
+      <div>
+        <img src="./images/DEV.jpeg" alt="Photo de profil">
+      </div>
+
+    </section>
+  </main>
+  <main class="about-modern" id="propos">
+    <div class="about-card">
+      <div class="about-img">
+        <img src="./images/photo.png" alt="Photo de profil">
+      </div>
+      <div class="about-text">
+        <h2>À propos de moi</h2>
+        <p>Je m'appelle <strong>N'GATTA Aman Bla Ange Muriel Noura</strong>, étudiante en 3e année d'informatique.
+          Passionnée par les nouvelles technologies, j'aime apprendre, expérimenter et relever des défis dans le domaine
+          du développement web et logiciel.</p>
+
+        <div class="about-details">
+          <div class="detail-block">
+            <h3>Ma formation</h3>
+            <ul>
+              <li>2024 - 2025 : Licence en Informatique — AGITEL FORMATION</li>
+              <li>2022 - 2024 : Brevet Technicien Supérieur(BTS) — AGITEL FORMATION</li>
+              <li>2021 - 2022 : Baccalauréat Scientifique — Lycée Antoine Gauze </li>
+            </ul>
+          </div>
+          <div class="detail-block">
+            <h3> Mes petites expériences</h3>
+            <ul>
+              <li>Stage en développement web front-end — WagSystems(en cours)</li>
+              <li>Co-lead Google Developper Students Clubs(GDSC) — AGITEL FORMATION</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Section Mes Projets -->
+  <section class="projects" id="projet">
+    <h2>Mes Projets</h2>
+    <div class="project-cards">
+      <div class="card">
+        <p>Maquette d'une application mobile de suivi agricole conçue par mes soins sur <strong>Figma</strong>
+          permettant la gestion des stocks et le suivi des ventes et dépenses des agriculteurs. le développement de
+          l'application est prévu prochainement.</p>
+        <span>#html, #css, #js</span>
+        <a href="https://www.figma.com/design/sYOHhqIPmU2iTz2BhcA1eA/Untitled?node-id=158-57&p=f&t=A09V781xXhjOtiol-0" target="_blank"></a><button>Voir</button>
+      </div>
+  <div class="card">
+  <p>App de gestion d'une bibliothèque en <strong>VB.NET</strong> en cours de réalisation</p>
+  <span>#VB.NET, #WinForms</span>
+  <button id="voirBtn">Voir</button>
+</div>
+
+<!-- Modal simple -->
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center; z-index:1000; color:white; text-align:center;">
+  <span id="closeModal" style="position:absolute; top:20px; right:40px; cursor:pointer; font-size:2rem;">&times;</span>
+  <div>
+    <img src="./images/img1 (2).png" style="width:80%; max-width:500px; margin-bottom:10px;">
+    <img src="./images/img2 (3).png" style="width:80%; max-width:500px; margin-bottom:10px;">
+    <img src="./images/img3 (1).png" style="width:80%; max-width:500px; margin-bottom:10px;">
+  </div>
+</div>
+
+
+      <!-- Fenêtre lightbox / carrousel -->
+
+      <div class="card">
+        <p>Un mini-jeu interactif en <strong>JavaScript</strong> qui utilise des événements DOM.</p>
+        <span>#html, #css, #js</span>
+        <a href=""><button>Voir</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Mes Compétences -->
+  <section class="skills" id="competence">
+    <h2>Mes Compétences</h2>
+    <div class="skills-container">
+      <!-- competences personnelles -->
+      <div class="skill-box">
+        <h3>Compétences personnelles</h3>
+        <div class="skill">
+          <p>Travail en équipe</p>
+          <div class="bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>Esprit d'analyse</p>
+          <div class="bar">
+            <div class="progress" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>Adaptabilité</p>
+          <div class="bar">
+            <div class="progress" style="width: 90%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competences techniques -->
+      <div class="skill-box">
+        <h3>Compétences techniques</h3>
+        <div class="skill">
+          <p>HTML</p>
+          <div class="bar">
+            <div class="progress" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>CSS</p>
+          <div class="bar">
+            <div class="progress" style="width: 65%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>JavaScript</p>
+          <div class="bar">
+            <div class="progress" style="width: 50%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>PHP</p>
+          <div class="bar">
+            <div class="progress" style="width: 25%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>Vous avez un <span class="highlight">projet en tête ?</span></h2>
+    <p>N'hésitez pas à me <span class="highlight">contacter</span></p>
+
+    <form class="contact-form">
+      <div class="form-group">
+        <div class="input-box">
+          <label for="prenom">Votre prénom</label>
+          <input type="text" id="prenom" placeholder="John">
+        </div>
+        <div class="input-box">
+          <label for="nom">Votre nom</label>
+          <input type="text" id="nom" placeholder="Ramako">
+        </div>
+      </div>
+
+      <div class="input-full">
+        <label for="sujet">Votre sujet</label>
+        <input type="text" id="sujet" placeholder="Développement d'un site vitrine">
+      </div>
+
+      <div class="input-full">
+        <textarea id="message" placeholder="Écrivez votre message ici !"></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Envoyer</button>
+    </form>
+  </section>
+
+
+  <footer>
+    <p>Designed by Muriel N'GATTA with HTML CSS JS</p>
+    <p>&copy; 2025 - Mon Portfolio</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
